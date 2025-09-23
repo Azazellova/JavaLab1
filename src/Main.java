@@ -55,7 +55,7 @@ public class Main {
                     System.out.println("Введите значение x: ");
                     System.out.print("> ");
                     double x1 = input.nextDouble();
-                    System.out.println(task1.fraction(x1));
+                    System.out.println("Дробнач часть числа: " + task1.fraction(x1));
                     break;
 
                 case 2:
@@ -70,19 +70,21 @@ public class Main {
                 case 3:
                     // Задание 1.5
                     System.out.println("== Двузначное число ==");
-                    System.out.println("Введите значение x: ");
+                    System.out.println("Введите значение x для проверки на двухзначность: ");
                     System.out.print("> ");
                     int num3 = input.nextInt();
-                    System.out.println(task1.is2Digits(num3));
+                    System.out.println("Число двухзначно: " + task1.is2Digits(num3));
                     break;
 
                 case 4:
                     // Задание 1.7
                     System.out.println("== Диапазон ==");
+                    System.out.println("Введите границы a и b");
                     System.out.print("a = ");
                     int a4 = input.nextInt();
                     System.out.print("b = ");
                     int b4 = input.nextInt();
+                    System.out.println("Введите число для проверки нахождения в диапазоне");
                     System.out.print("num = ");
                     int num4 = input.nextInt();
                     System.out.println(task1.isInRange(a4, b4, num4));
@@ -103,14 +105,16 @@ public class Main {
                 case 6:
                     // Задание 2.1
                     System.out.println("== Модуль числа ==");
+                    System.out.println("Введите число, для поиска его модуля");
                     System.out.print("x = ");
                     int x6 = input.nextInt();
-                    System.out.println(task2.abs(x6));
+                    System.out.println("Модуль числа: " + task2.abs(x6));
                     break;
 
                 case 7:
                     // Задание 2.3
                     System.out.println("== Тридцать пять ==");
+                    System.out.println("Введите значение, для проверки числа на деление на 3 или 5");
                     System.out.print("x = ");
                     int x7 = input.nextInt();
                     System.out.println(task2.is35(x7));
@@ -119,6 +123,7 @@ public class Main {
                 case 8:
                     // Задание 2.5
                     System.out.println("== Тройной максимум ==");
+                    System.out.println("Введите значения для поиска максимума среди 3 чисел");
                     System.out.print("x = ");
                     int x8 = input.nextInt();
                     System.out.print("y = ");
@@ -131,6 +136,7 @@ public class Main {
                 case 9:
                     // Задание 2.7
                     System.out.println("== Двойная сумма ==");
+                    System.out.println("Введите значения x и y для суммы двух чисел");
                     System.out.print("x = ");
                     int x9 = input.nextInt();
                     System.out.print("y = ");
@@ -141,6 +147,7 @@ public class Main {
                 case 10:
                     // Задание 2.9
                     System.out.println("== День недели ==");
+                    System.out.println("Введите число, для вывода дня недели");
                     System.out.print("x = ");
                     int day10 = input.nextInt();
                     System.out.println(task2.day(day10));
@@ -149,6 +156,7 @@ public class Main {
                 case 11:
                     // Задание 3.1
                     System.out.println("== Числа подряд ==");
+                    System.out.println("Введите значение n, для вывода чисел от 0 до n");
                     System.out.print("n = ");
                     int n11 = input.nextInt();
                     System.out.println(task3.listNums(n11));

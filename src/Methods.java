@@ -13,12 +13,11 @@ public class Methods {
     }
 
     public boolean isInRange (int a, int b, int num){
-        if (a>=b){
+        if (a >= b){
             if ((num >= b) && (num <= a)){
                 return true;
             }
-        }
-        else{
+        } else {
             if ((num >= a) && (num <= b)){
                 return true;
             }

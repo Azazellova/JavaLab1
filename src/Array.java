@@ -8,21 +8,24 @@ public class Array {
         return -1;
     }
 
-    public int maxAbs(int[] arr) { //метод возвращает наибольший по модулю элемент массива
-        if (arr.length == 1){
+    public int maxAbs(int[] arr) {
+        if (arr.length == 1) {
             return arr[0];
         }
 
-        int max_abs = -1;
+        int maxAbs = -1;
 
         for (int i = 0; i < arr.length; i++) {
-            if (Math.abs(arr[i]) > Math.abs(max_abs)) max_abs = arr[i];
+            if (Math.abs(arr[i]) > Math.abs(maxAbs)){
+                maxAbs = arr[i];
+            }
         }
-        return max_abs;
+        return maxAbs;
     }
 
     public int[] add(int[] arr, int[] ins, int pos) {
         int[] add_arr = new int[arr.length + ins.length];
+
         for (int i = 0; i < pos; i++) {
             add_arr[i] = arr[i];
         }
@@ -38,6 +41,7 @@ public class Array {
     public int[] reverseBack(int[] arr) {
         int arrLen = arr.length;
         int[] arr2 = new int[arrLen];
+
         for (int i = 0; i < arrLen; i++) {
             arr2[i] = arr[arrLen-i-1];
         }
@@ -47,7 +51,9 @@ public class Array {
     public int[] findAll (int[] arr, int x){
         int count = 0;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i]==x) count++;
+            if (arr[i] == x) {
+                count++;
+            }
         }
 
         if (count == 0) {
@@ -58,7 +64,7 @@ public class Array {
 
         count = 0;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i]==x){
+            if (arr[i] == x) {
                 resultArr[count] = i;
                 count++;
             }

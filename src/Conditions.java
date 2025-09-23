@@ -1,17 +1,16 @@
 public class Conditions {
-    public int abs (int x){
-        if (x<0){
-            return x*(-1);
+    public int abs (int x) {
+        if (x < 0) {
+            return x * (-1);
         }
         return x;
     }
 
-    public boolean is35 (int x){
-        if ((x%3 == 0) || (x%5 == 0)){
-            if ((x%3 == 0) && (x%5 == 0)){
+    public boolean is35 (int x) {
+        if ((x%3 == 0) || (x%5 == 0)) {
+            if ((x%3 == 0) && (x%5 == 0)) {
                 return false;
-            }
-            else{
+            } else {
                 return true;
             }
         }
@@ -19,27 +18,26 @@ public class Conditions {
     }
 
     public int max3 (int x, int y, int z){
-        if ((x>z) && (x>y)){
+        if ((x > z) && (x > y)){
             return x;
-        } else if ((y>z) && (y>x)) {
+        } else if ((y > z) && (y > x)) {
             return y;
         }
         return z;
     }
 
-    public int sum2 (int x, int y){
+    public int sum2 (int x, int y) {
         int sum;
         sum = x + y;
-        if ((sum >= 10) && (sum < 20)){
+        if ((sum >= 10) && (sum < 20)) {
             return 20;
-        }
-        else{
+        } else {
             return sum;
         }
     }
 
-    public String day (int x){
-        switch (x){
+    public String day (int x) {
+        switch (x) {
             case 1: {
                 return "Понедельник";
             }
