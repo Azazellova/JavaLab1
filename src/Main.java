@@ -31,9 +31,6 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         Methods task1 = new Methods();
-        Conditions task2 = new Conditions();
-        Cycles task3 = new Cycles();
-        Array task4 = new Array();
 
         int choice;
 
@@ -55,7 +52,7 @@ public class Main {
                     System.out.println("Введите значение x: ");
                     System.out.print("> ");
                     double x1 = input.nextDouble();
-                    System.out.println("Дробнач часть числа: " + task1.fraction(x1));
+                    System.out.println("Дробная часть числа: " + task1.fraction(x1));
                     break;
 
                 case 2:
@@ -108,7 +105,7 @@ public class Main {
                     System.out.println("Введите число, для поиска его модуля");
                     System.out.print("x = ");
                     int x6 = input.nextInt();
-                    System.out.println("Модуль числа: " + task2.abs(x6));
+                    System.out.println("Модуль числа: " + task1.abs(x6));
                     break;
 
                 case 7:
@@ -117,7 +114,7 @@ public class Main {
                     System.out.println("Введите значение, для проверки числа на деление на 3 или 5");
                     System.out.print("x = ");
                     int x7 = input.nextInt();
-                    System.out.println(task2.is35(x7));
+                    System.out.println(task1.is35(x7));
                     break;
 
                 case 8:
@@ -130,7 +127,7 @@ public class Main {
                     int y8 = input.nextInt();
                     System.out.print("z = ");
                     int z8 = input.nextInt();
-                    System.out.print("Максимум: " + task2.max3(x8, y8, z8));
+                    System.out.print("Максимум: " + task1.max3(x8, y8, z8));
                     break;
 
                 case 9:
@@ -141,7 +138,7 @@ public class Main {
                     int x9 = input.nextInt();
                     System.out.print("y = ");
                     int y9 = input.nextInt();
-                    System.out.print("Сумма x и y: " + task2.sum2(x9, y9));
+                    System.out.print("Сумма x и y: " + task1.sum2(x9, y9));
                     break;
 
                 case 10:
@@ -150,7 +147,7 @@ public class Main {
                     System.out.println("Введите число, для вывода дня недели");
                     System.out.print("x = ");
                     int day10 = input.nextInt();
-                    System.out.println(task2.day(day10));
+                    System.out.println(task1.day(day10));
                     break;
 
                 case 11:
@@ -159,7 +156,7 @@ public class Main {
                     System.out.println("Введите значение n, для вывода чисел от 0 до n");
                     System.out.print("n = ");
                     int n11 = input.nextInt();
-                    System.out.println(task3.listNums(n11));
+                    System.out.println(task1.listNums(n11));
                     break;
 
                 case 12:
@@ -179,7 +176,7 @@ public class Main {
                             System.out.print("> ");
                         }
                     } while (number12 <= 0);
-                    System.out.println(task3.chet(number12));
+                    System.out.println(task1.chet(number12));
                     break;
 
                 case 13:
@@ -193,7 +190,7 @@ public class Main {
                         input.next();
                     }
                     long number13 = input.nextLong();
-                    System.out.println(task3.numLen(number13));
+                    System.out.println(task1.numLen(number13));
                     break;
 
                 case 14:
@@ -214,7 +211,7 @@ public class Main {
                             System.out.print("> ");
                         }
                     } while (number14 <= 0);
-                    task3.square(number14);
+                    task1.square(number14);
                     break;
 
                 case 15:
@@ -236,7 +233,7 @@ public class Main {
                             System.out.print("> ");
                         }
                     } while (number15 <= 0);
-                    task3.rightTriangle(number15);
+                    task1.rightTriangle(number15);
                     break;
 
                 case 16:
@@ -275,7 +272,7 @@ public class Main {
                         input.next();
                     }
                     int x16 = input.nextInt();
-                    System.out.println("Первое вхождение числа на индексе: " + task4.findFirst(arr16, x16));
+                    System.out.println("Первое вхождение числа на индексе: " + task1.findFirst(arr16, x16));
                     break;
 
                 case 17:
@@ -305,7 +302,7 @@ public class Main {
                     if (input.hasNextLine()) {
                         input.nextLine();
                     }
-                    System.out.println("Максимальное значение по модулю: " + task4.maxAbs(arr17));
+                    System.out.println("Максимальное значение по модулю: " + task1.maxAbs(arr17));
                     break;
 
                 case 18:
@@ -382,7 +379,7 @@ public class Main {
                     }
                     int pos18 = input.nextInt();
                     System.out.println("Получившийся массив: ");
-                    int[] add_arr18 = task4.add(arr18, ins18, pos18);
+                    int[] add_arr18 = task1.add(arr18, ins18, pos18);
                     for (int i = 0; i < add_arr18.length; i++) {
                         System.out.print(add_arr18[i] + " ");
                     }
@@ -425,7 +422,7 @@ public class Main {
                     }
 
                     System.out.println("Получившийся массив: ");
-                    int[] reverseArr19 = task4.reverseBack(arr19);
+                    int[] reverseArr19 = task1.reverseBack(arr19);
                     for (int i = 0; i < reverseArr19.length; i++) {
                         System.out.print(reverseArr19[i] + " ");
                     }
@@ -483,7 +480,7 @@ public class Main {
                     } while (x20 <= 0);
 
                     System.out.println("Массив с индексами вхождения: ");
-                    int[] arrInx20 = task4.findAll(arr20, x20);
+                    int[] arrInx20 = task1.findAll(arr20, x20);
                     if (arrInx20.length == 0) {
                         System.out.println("Число " + x20 + " не найдено в массиве.");
                     } else {
@@ -493,11 +490,9 @@ public class Main {
                         System.out.println();
                     }
                     break;
-
                 case 0:
                     System.out.println("Выход из программы...");
                     break;
-
                 default:
                     System.out.println("Ошибка: выберите число от 0 до 20");
             }
