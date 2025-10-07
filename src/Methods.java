@@ -1,5 +1,5 @@
 public class Methods {
-
+    // Задание 1
     public double fraction (double x) {
         return x % 1;
     }
@@ -29,6 +29,7 @@ public class Methods {
         return (a == b && b == c);
     }
 
+    // Задание 2
     public int abs (int x) {
         if (x < 0) {
             return x * (-1);
@@ -95,6 +96,7 @@ public class Methods {
         }
     }
 
+    // Задание 3
     public String listNums (int x) {
         String list = "";
         for (int i = 0; i <= x; i++) {
@@ -147,6 +149,7 @@ public class Methods {
         }
     }
 
+    //Задание 4
     public int findFirst(int[] arr, int x) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == x) {
@@ -164,7 +167,7 @@ public class Methods {
         int maxAbs = 0;
 
         for (int i = 0; i < arr.length; i++) {
-            if (Math.abs(arr[i]) > Math.abs(maxAbs)) {
+            if (abs(arr[i]) > abs(maxAbs)) {
                 maxAbs = arr[i];
             }
         }
